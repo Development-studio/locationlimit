@@ -6,7 +6,6 @@ function lol(status,result){
 	if (!file.exists(path)) {
 		file.writeTo(path, '')}
 	let ipinf = JSON.parse(result)
-	log(regions.includes(ipinf.countryCode))
 	if (stat == 1){
 		if (regions.includes(ipinf.countryCode) == false){
     		file.writeTo(path, '1')
